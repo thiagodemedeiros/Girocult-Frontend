@@ -1,0 +1,38 @@
+.ButtonPretoBranco-Girocult {
+    width: 210px;
+    border-radius: 30px;
+    padding: 8px 10px;
+
+    background-color: black;
+    color: azure;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: font-weight 0.3s ease, width 0.3s ease;
+}
+
+.ButtonPretoBranco-Girocult:hover {
+    width: 220px;
+    font-weight: 600;
+}
+
+@media (min-width: 0px) and (max-width: 660px) {
+    .ButtonPretoBranco-Girocult{
+        width: 30vw;
+        height: 30px;
+        padding: 0px 2px;
+
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .ButtonPretoBranco-Girocult{
+        width: 40vw;
+
+        font-size: 1rem;
+    }
+}

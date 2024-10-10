@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.PaginaNoticia-banner-principal {
+    width: 100vw;
+    margin-bottom: -4px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .PaginaNoticia-banner-principal {
+        width: 100vw;
+        margin-bottom: -4px;
+        height: 277px;
+
+        background-image: url('img/banner.png');
+
+        img {
+            display: none;
+        }
+    }
+}
+
+
+.PaginaNoticia-menu-noticias{
+    width: 100%;
+    height: 160px;
+    background-color: #000;
+    border-top: #FFDD40 2px solid;
+
+    display: flex; /* AQUI DESATIVA E ATIVA O CARROSSEL */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 840px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            color: azure;
+            font-size: 12px;
+
+            transition: font-size 0.3s ease,
+        }
+
+        li::after {
+            content: '';
+            display: block;
+            width: 60%;
+            height: 1px;
+            background-color: yellow;
+            margin-top: 2px; 
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        li:hover {
+            font-size: 14px;
+        }
+        
+        li:hover::after {
+            width: 80%;
+            height: 2px;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    .PaginaNoticia-menu-noticias{
+        width: 100vw;
+        height: 160px;
+        padding: 0px 20px;
+
+        ul {
+            width: 100vw;
+            overflow-x: scroll;
+            gap: 20px;
+        }
+        
+        ul::-webkit-scrollbar {
+            display: none; /* Oculta a barra de rolagem para navegadores WebKit */
+        }
+    }
+}
+
+/* @media (min-width: 0px) and (max-width: 550px) {
+    .PaginaNoticia-menu-noticias{
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    
+        ul {
+    
+            width: 90vw;
+    
+            li {
+                img {
+                    width: 12vw;
+                }
+            }
+        }
+    }
+} */
+
+
+
+.PaginaNoticia-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    /* margin-left: -30px; */
+    gap: 200px;
+}
+
+@media (min-width: 0px) and (max-width: 1170px) {
+    .PaginaNoticia-container {
+        /* margin-left: 10px; */
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 0px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .PaginaNoticia-container {
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+    .PaginaNoticia-container {
+        margin-left: -11px;
+    }
+}
+
+
+
+.PaginaNoticia-agenda-cultural {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 40px 0px;
+    }
+
+    h1::after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 1px;
+        background-color: #FFD200;
+        margin: 2px auto 0;
+    }
+
+    .PaginaNoticia-agenda-cultural-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 30px;
+    }
+}
+
+
+
+.PaginaNoticia-agenda-cultural-seletor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 240px;
+
+    margin: 70px 0px;
+
+    .PaginaNoticia-agenda-cultural-seletor-texto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 200px;
+
+        h5 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            list-style: none;
+            width: 70px;
+
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .PaginaNoticia-agenda-cultural-seletor-seta{
+        width: 8px;
+        height: 6px;
+    }
+}
+
+
+
+.PaginaNoticia-seja-parceiro {
+
+    .PaginaNoticia-seja-parceiro-titulo-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        margin: 60px 0px 40px 0px;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+
+            width: 210px;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 1px;
+            background-color: #FFD200;
+            margin: 2px auto 0;
+        }
+
+        h3 {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+
+            width: 280px;
+        }
+    }
+
+    .PaginaNoticia-seja-parceiro-revista-container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .PaginaNoticia-seja-parceiro-revista {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+
+            gap: 15px;
+
+            h2{
+                font-size: 14px;
+                text-align: center;
+            }
+
+            h2::after {
+                content: '';
+                display: block;
+                width: 40%;
+                height: 1px;
+                background-color: #FFD200;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1170px) {
+    .PaginaNoticia-seja-parceiro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: -70px 0px 70px 0px;
+
+        .PaginaNoticia-seja-parceiro-revista-container {
+            display: flex;
+            flex-direction: row;
+
+            .PaginaNoticia-seja-parceiro-revista {
+                /* border: #ff0000 solid; */
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                gap: 15px;
+
+                h2 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .PaginaNoticia-seja-parceiro {
+        .PaginaNoticia-seja-parceiro-revista-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+@keyframes menuStretch {
+    from {
+    height: 0;
+    padding: 0;
+    }
+    to {
+    padding: 0px 0px;
+    height: 170px;
+    }
+}
+
+@keyframes menuStretchInverse {
+    from {
+    padding: 0px 0px;
+    height: 170px;
+    }
+    to {
+    height: 0;
+    padding: 0;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-img {
+    display: none;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 10px;
+
+    border: none;
+}
+
+.pagina-artista-cadastro-UL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 600px;
+
+    margin-bottom: 80px;
+
+    list-style: none;
+
+    .pagina-artista-cadastro-LI{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+        /* border: #ffd200 solid; */
+    }
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile.open {
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 681px) {
+    .menu {
+        margin-top: -30px;
+        margin-bottom: 10px;
+
+        .pagina-artista-cadastro-UL {
+            display: none;
+        }
+    }
+
+    .menu-img {
+        display: flex;
+    }
+
+    .pagina-artista-cadastro-UL {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: menuStretchInverse 1s ease-in-out forwards;
+        height: 170px;
+
+        margin-bottom: 20px;
+        margin-top: -20px;
+
+        .pagina-artista-cadastro-UL-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            width: auto;
+            gap: 7px;
+
+            margin: 20px 0px 80px 45px;
+        
+            list-style: none;
+
+            .pagina-artista-cadastro-LI-mobile {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                width: auto;
+            }
+        }
+    }
+
+    .menu-mobile.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: menuStretch 0.5s ease-in-out forwards;
+        height: 170px;
+
+        margin-top: -20px;
+        margin-bottom: 25px;
+
+        .pagina-artista-cadastro-UL-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            opacity: 1;
+            transition: opacity 1.0s ease;
+            width: auto;
+            gap: 7px;
+        
+            margin-bottom: 0;
+            margin-left: 45px;
+        
+            list-style: none;
+
+            .pagina-artista-cadastro-LI-mobile {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                width: auto;
+            }
+        }
+    }
+}

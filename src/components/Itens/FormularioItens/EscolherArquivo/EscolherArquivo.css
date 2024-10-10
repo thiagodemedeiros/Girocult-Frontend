@@ -1,0 +1,70 @@
+.EscolherArquivo h3 {
+    font-size: 14px;
+    font-weight: 530;
+    color: #000;
+
+    margin-bottom: 5px;
+}
+
+.EscolherArquivo-selecao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.EscolherArquivo-selecao h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8B909A;
+}
+
+.EscolherArquivo-selecao input {
+    display: none
+}
+
+.EscolherArquivo-selecao label {
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: #b4b4b4 solid 1px;
+    cursor: pointer;
+    padding: 2px 7px; 
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.EscolherArquivo-info-h5 {
+    display: flex;
+    flex-direction: column;
+
+    .EscolherArquivo-info-h5-infoArquivo2 {
+        margin-top: 2px;
+    }
+}
+
+.EscolherArquivo-info-h5 h5 {
+    font-size: 8px;
+    font-weight: 500;
+    color: #8B909A;
+}
+
+.EscolherArquivo h5 {
+    font-size: 8px;
+    font-weight: 500;
+    color: #8B909A;
+
+    margin-top: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .EscolherArquivo h3 {
+        font-size: 14px;
+        font-weight: 530;
+        color: #000;
+
+        margin-bottom: 5px;
+
+        width: 50vw;
+    }
+}

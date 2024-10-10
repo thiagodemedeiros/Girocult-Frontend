@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-anuncio-button-conta {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+
+    margin: 30px 40px -10px 0px;
+
+    button {
+        padding: 5px 25px;
+        border-radius: 30px;
+        background-color: black;
+        color: #fff;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    button:hover {
+        background-color: #ffd200;
+        color: #000000;
+        transform: scale(1.1);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .button-anuncio {
+        button {
+            margin: 0px 10px;
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-anuncio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-banner-anuncio {
+    /* border: #ff0000 solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.container-anuncio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: #ff0000 solid; */
+
+    width: 85vw;
+
+    margin: 50px 0px;
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        width: 537px;
+        gap: 50px;
+
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            width: 486px;
+            /* font-family: 'Times New Roman', sans-serif; TIREI A FONTE PQ PRA MIM FICOU FEIO, SE QUISER, SÓ ATIVAR ELA QUE JÁ TA APLICADA*/ 
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        button {
+            width: 233px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: black;
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: #ffd200;
+            color: #000000;
+            transform: scale(1.1);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .texto-amarelo {
+            color: #ffd200;
+        }
+    }
+
+    img {
+        height: 547px;
+        width: 386px;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1440px) {
+        .texto {
+            width: 440px;
+        }
+
+        img {
+            height: 692px;
+            width: 488px;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 999px) {
+        .texto {
+            width: 380px;
+        }
+
+        img {
+            height: 445px;
+            width: 278px;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 799px) {
+        .texto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            margin-bottom: 20px;
+
+            width: 84vw;
+
+            
+        }
+
+        img {
+            height: 548px;
+            width: 386px;
+        }
+
+    }
+
+    @media (min-width: 0px) and (max-width: 530px) {
+        .texto {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            text-align: start;
+
+            margin-bottom: 40px;
+
+            width: 84vw;
+
+            /* border: #ffd200 solid; */
+
+            gap: 25px;
+
+            h1 {
+                /* border: #ffd200 solid; */
+                font-size: 20px;
+                width: 80vw;
+            }
+
+            p {
+                width: 78vw;
+            }
+        }
+
+        img {
+            height: auto;
+            width: 77vw;
+        }
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1440px) {
+    .container-anuncio {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+    .container-anuncio {
+        width: 95vw;
+        /* border: #0077ff solid; */
+    }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+    .container-anuncio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* border: #ff0000 solid; */
+
+        width: 95vw;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        margin: 20px 0px 20px 0px;
+
+        h3 {
+            grid-area: title;
+        }
+
+        .button-anuncio {
+            button {
+                margin: 0px 10px;
+            }
+        }
+    }
+}

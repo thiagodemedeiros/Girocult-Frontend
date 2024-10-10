@@ -1,0 +1,517 @@
+.TelaAjuda-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* gap: 400px; */
+    
+    width: 100vw;
+
+    .TelaAjuda-body-img {
+        width: 800px;
+        margin-bottom: -10px;
+        z-index: -1;
+
+        img {
+            width: 800px;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 1450px) {
+        .TelaAjuda-body-img {
+            margin-bottom: -10px;
+            z-index: -1;
+
+            img {
+                width: 800px;
+                width: 56vw;
+            }
+        }
+    }
+
+    .TelaAjuda-body-formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        width: 90vw;
+        max-width: 484px;
+        height: 520px;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700px;
+        }
+
+
+        .TelaAjuda-body-formulario-input{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 3px;
+
+            h3{
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input{
+                border-radius: 30px;
+                border: #6A737E solid 1px;
+
+                width: 506px;
+                height: 40px;
+                padding-left: 15px;
+
+                font-size: 14px;
+                font-weight: 400;
+                color: #AAAAAA;
+            }
+
+            @media (min-width: 0px) and (max-width: 1000px) {
+                input{
+                    border-radius: 30px;
+                    border: #6A737E solid 1px;
+    
+                    width: 78.4vw;
+                    max-width: 478px;
+                    height: 40px;
+                    padding-left: 15px;
+    
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+            }
+        }
+
+        .TelaAjuda-body-formulario-TelWats{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+            gap: 40px;
+
+            .TelaAjuda-body-formulario-input-2{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 3px;
+    
+                h3{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+    
+                input{
+                    border-radius: 30px;
+                    border: #6A737E solid 1px;
+    
+                    width: 242px;
+                    height: 40px;
+                    padding-left: 15px;
+
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+
+                @media (min-width: 0px) and (max-width: 1000px) {
+                    input{
+                        border-radius: 30px;
+                        border: #6A737E solid 1px;
+        
+                        width: 37.6vw;
+                        max-width: 229px;
+                        height: 40px;
+                        padding-left: 15px;
+        
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #AAAAAA;
+                    }
+                }
+            }
+
+            .TelaAjuda-body-formulario-TelWats-wats{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 13px;
+
+                h3{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .TelaAjuda-body-formulario-TelWats-organizacao{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+
+                    .TelaAjuda-body-formulario-TelWats-radio{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+
+                        h5{
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .TelaAjuda-body-formulario-Redes {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .TelaAjuda-body-formulario-redes-input-2{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 3px;
+
+            h3{
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input{
+                border-radius: 30px;
+                border: #6A737E solid 1px;
+
+                width: 242px;
+                height: 40px;
+                padding-left: 15px;
+
+                font-size: 14px;
+                font-weight: 400;
+                color: #AAAAAA;
+            }
+
+            @media (min-width: 0px) and (max-width: 1000px) {
+                input{
+                    border-radius: 30px;
+                    border: #6A737E solid 1px;
+    
+                    width: 37.6vw;
+                    max-width: 229px;
+                    height: 40px;
+                    padding-left: 15px;
+    
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+            }
+        }
+    }
+
+    .TelaAjuda-body-formulario-mensagem{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+
+        h3{
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input{
+            border-radius: 20px;
+            border: #6A737E solid 1px;
+
+            width: 506px;
+            height: 94px;
+            padding-left: 15px;
+            padding-bottom: 50px;
+
+            font-size: 14px;
+            font-weight: 400;
+            color: #AAAAAA;
+        }
+
+        @media (min-width: 0px) and (max-width: 1000px) {
+            input{
+                border-radius: 20px;
+                border: #6A737E solid 1px;
+    
+                width: 78.4vw;
+                max-width: 478px;
+                height: 94px;
+                padding-left: 15px;
+                padding-bottom: 50px;
+    
+                font-size: 14px;
+                font-weight: 400;
+                color: #AAAAAA;
+            }
+        }
+    }
+
+    button {
+        width: 506px;
+        height: 42px;
+        border-radius: 30px;
+
+        background-color: black;
+
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    @media (min-width: 0px) and (max-width: 1000px) {
+        button {
+            width: 78.7vw;
+            max-width: 478px;
+            height: 42px;
+            border-radius: 30px;
+    
+            background-color: black;
+    
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1450px) {
+        .TelaAjuda-body-formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            margin-bottom: 100px;
+    
+            height: 520px;
+    
+            h1 {
+                font-size: 20px;
+                font-weight: 700px;
+            }
+    
+            .TelaAjuda-body-formulario-input{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 3px;
+    
+                h3{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+    
+                input{
+                    border-radius: 30px;
+                    border: #6A737E solid 1px;
+    
+                    width: 36vw;
+                    height: 40px;
+                    padding-left: 15px;
+    
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+            }
+    
+            .TelaAjuda-body-formulario-TelWats{
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: space-between;
+                gap: 3vw;
+    
+                .TelaAjuda-body-formulario-input-2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 3px;
+        
+                    h3{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+        
+                    input{
+                        border-radius: 30px;
+                        border: #6A737E solid 1px;
+        
+                        width: 17vw;
+                        height: 40px;
+                        padding-left: 15px;
+    
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #AAAAAA;
+                    }
+                }
+    
+                .TelaAjuda-body-formulario-TelWats-wats{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 13px;
+    
+                    h3{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+    
+                    .TelaAjuda-body-formulario-TelWats-organizacao{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 30px;
+    
+                        .TelaAjuda-body-formulario-TelWats-radio{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+    
+                            h5{
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .TelaAjuda-body-formulario-Redes {
+                display: flex;
+                flex-direction: row;
+                gap: 2.09vw;
+        
+                .TelaAjuda-body-formulario-redes-input-2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 3px;
+        
+                    h3{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+        
+                    input{
+                        border-radius: 30px;
+                        border: #6A737E solid 1px;
+        
+                        width: 17vw;
+                        height: 40px;
+                        padding-left: 15px;
+        
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #AAAAAA;
+                    }
+                }
+            }
+        
+            .TelaAjuda-body-formulario-mensagem{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+        
+                h3{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+        
+                input{
+                    border-radius: 20px;
+                    border: #6A737E solid 1px;
+        
+                    width: 36vw;
+                    height: 94px;
+                    padding-left: 15px;
+                    padding-bottom: 50px;
+        
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+            }
+        
+            button {
+                width: 36vw;
+                height: 42px;
+                border-radius: 30px;
+        
+                background-color: black;
+        
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    .TelaAjuda-body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100vw;
+    
+        .TelaAjuda-body-img {
+            width: 90vw;
+            margin-bottom: -10px;
+            z-index: -1;
+    
+            img {
+                width: 90vw;
+            }
+        }
+
+        .TelaAjuda-body-formulario {
+            align-items: center;
+
+            .TelaAjuda-body-formulario-TelWats{
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: space-between;
+
+                width: 78.9vw;
+                max-width: 478px;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .TelaAjuda-body {
+        .TelaAjuda-body-formulario {
+            .TelaAjuda-body-formulario-TelWats{
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: space-between;
+
+                .TelaAjuda-body-formulario-TelWats-wats{
+                    .TelaAjuda-body-formulario-TelWats-organizacao{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}

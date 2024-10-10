@@ -1,0 +1,14 @@
+.CardsSaibaMais-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    width: 1150px;
+}
+
+@media (min-width: 0px) and (max-width: 1440px) {
+    .CardsSaibaMais-Container {
+        width: 86vw;
+    }
+}

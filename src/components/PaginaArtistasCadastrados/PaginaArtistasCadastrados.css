@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.pagina-artista-cadastro-UL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 600px;
+
+    margin-bottom: 80px;
+
+    list-style: none;
+
+    .pagina-artista-cadastro-LI{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+        /* border: #ffd200 solid; */
+    }
+}
+
+@media (min-width: 0px) and (max-width: 681px) {
+    .pagina-artista-cadastro-UL {
+        display: none;
+    }
+}
+
+
+.container-banner-anuncio {
+    /* border: #ff0000 solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+}
+
+@media (min-width: 431px) and (max-width: 834px) {
+    .container-banner-anuncio {
+        background-image: url('./img/banner2.png');
+        background-position: center;
+
+        height: 200px;
+
+        .banner1-pagina-artista-cadastro {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 430px) {
+    .container-banner-anuncio {
+        background-image: url('./img/banner3.png');
+        background-position: center;
+
+        height: 200px;
+
+        .banner1-pagina-artista-cadastro {
+            display: none;
+        }
+    }
+}
+
+
+.button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+
+    margin: 50px 60px 80px 0px;
+
+    button {
+        padding: 5px 25px;
+        border-radius: 30px;
+        background-color: black;
+        color: #fff;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    button:hover {
+        background-color: #ffd200;
+        color: #000000;
+        transform: scale(1.1);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .button-anuncio {
+        button {
+            margin: 0px 10px;
+        }
+    }
+
+    .button-menu-pagina-artista-cadastro {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        margin: 0px;
+        padding: 20px 0px 100px 0px;
+
+        /* border: #ffd200 solid; */
+
+        .button-anuncio {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button-menu-pagina-artista-cadastro {
+            display: flex;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 681px) and (max-width: 850px) {
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        margin: 50px 0px 50px 0px;
+
+        /* border: #ffd200 solid; */
+    }
+}
+
+
+.section-artista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    /* width: 82.084vw; */
+    width: 90vw;
+
+    margin-bottom: 100px;
+
+    /* border: #ffd200 solid; */
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1440px) {
+    .container-anuncio {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+    .container-anuncio {
+        width: 95vw;
+        /* border: #0077ff solid; */
+    }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+    .container-anuncio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* border: #ff0000 solid; */
+
+        width: 95vw;
+    }
+}
+

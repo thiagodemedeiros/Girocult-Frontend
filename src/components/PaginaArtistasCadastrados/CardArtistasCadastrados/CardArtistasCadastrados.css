@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.card-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: #ff0000 solid; */
+
+    flex: 0 0;
+
+    padding: 15px 20px;
+
+    background-color: #000000;
+    border-radius: 20px;
+
+    img {
+        height: 200px;
+        width: 250px;
+        border-radius: 20px;
+    }
+
+    .texto-card-artista {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        width: 243px;
+        height: 300px;
+
+        margin: 10px 0px 25px 0px;
+
+        /* border: #ffd200 solid; */
+
+        h1 {
+            font-size: 14px;
+            font-weight: 700;
+            color:aliceblue;
+        }
+
+        h2 {
+            font-size: 12px;
+            font-weight: 700;
+            color:aliceblue;
+        }
+
+        p {
+            font-size: 10px;
+            font-weight: 400;
+            color:aliceblue;
+        }
+
+        .texto-card-artista-infos{
+            /* border: #ff0000 solid; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 32px;
+
+            h2{
+                margin-bottom: 1px;
+            }
+
+            p{
+                margin-bottom: 6px;
+            }
+
+            .texto-card-artista-infos-valor {
+                margin-left: 10px;
+            }
+        }
+
+        .texto-card-artista-sobre {
+            h2{
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .card-artista-button{
+        width: 243px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+            width: 103px;
+            height: 37px;
+
+            border-radius: 10px;
+            background-color: #fff;
+
+            font-size: 10px;
+            font-weight: 700;
+            color: #000000;
+        }
+    }
+}

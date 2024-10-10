@@ -1,0 +1,130 @@
+.EditarPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 800px;
+    height: 1054px;
+    border: #0000003d solid 1px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 #00000048;
+
+    margin-bottom: 70px;
+
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .EditarPerfil {
+        width: 93vw;
+        height: auto;
+        padding: 50px 0px;
+        border: #0000003d solid 1px;
+        border-radius: 20px;
+        box-shadow: 0 4px 4px 0 #00000048;
+    
+        margin-bottom: 70px;
+    
+    }
+}
+
+.EditarPerfil-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 669px;
+    width: 34.8vw;
+}
+
+.EditarPerfil-formulario-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 887px;
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .EditarPerfil-formulario-itens {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: auto;
+        gap: 20px
+    }   
+}
+
+.editarperfil-button button{
+    width: 116px;
+    height: 41px;
+    border-radius: 30px;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .editarperfil-button button{
+        width: 85vw;
+        height: 41px;
+        border-radius: 30px;
+        background-color: #000;
+
+        
+    
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.EditarPerfil-input-2linha {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.EditarPerfil-input-2linha-outro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.EditarPerfil-input-3linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .EditarPerfil-input-2linha {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .EditarPerfil-input-2linha-outro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .EditarPerfil-input-3linha {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+

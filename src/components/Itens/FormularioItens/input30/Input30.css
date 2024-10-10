@@ -1,0 +1,31 @@
+.input30 h3 {
+    font-size: 14px;
+    font-weight: 530;
+    color: #000;
+}
+
+.input30 input {
+    width: 202px;
+    height: 44px;
+    border-radius: 30px;
+    border: #b4b4b4 solid 1px;
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #d3d3d3;
+}
+
+.input30 input::placeholder {
+    color: #d3d3d3;
+}
+
+@media (min-width: 0px) and (max-width: 840px) {
+    .input30 input {
+        width: 85vw;
+        height: 44px;
+        border-radius: 30px;
+        border: #b4b4b4 solid 1px;
+        padding-left: 20px;
+        margin-top: 5px;
+        text-decoration-color: blue;
+    }
+}

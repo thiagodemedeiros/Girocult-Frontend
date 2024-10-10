@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.PaginaNoticia-agenda-cultural-card{
+    display: flex;
+    flex-direction: row;
+
+    gap: 15px;
+
+    .PaginaNoticia-agenda-cultural-card-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        h3{
+            font-size: 14px;
+            color: #545966;
+            
+            margin-bottom: 1px;
+        }
+
+        h5{
+            font-size: 8px;
+            font-weight: 400;
+            color: #545966;
+
+            margin-bottom: 8px;
+        }
+
+        h4{
+            font-size: 12px;
+            font-weight: 400;
+            color: #545966;
+
+            width: 340px;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .PaginaNoticia-agenda-cultural-card{
+        display: flex;
+        flex-direction: column;
+    
+        gap: 15px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .PaginaNoticia-agenda-cultural-card{
+        display: flex;
+        flex-direction: column;
+        
+        width: 80vw;
+        gap: 15px;
+
+        .PaginaNoticia-agenda-cultural-card-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+    
+            h4{
+                font-size: 12px;
+                font-weight: 400;
+                color: #545966;
+    
+                width: auto;
+            }
+        }
+    }
+}
