@@ -19,7 +19,7 @@ function App() {
     <>
       {/* Popups */}
       <IndicacaoProjeto/>
-      {/* <ChamamentoCadastrarNovosArtistas/> */}
+      <ChamamentoCadastrarNovosArtistas/>
 
       <div className='espacamento'></div>
       {/* Editar Perfil */}
