@@ -8,6 +8,9 @@ const IndicacaoProjeto = () => {
             <section className='IndicacaoProjeto-container'>
                 <div className='IndicacaoProjeto-popup'>
                     <div className='IndicacaoProjeto-popup-itens'>
+                        <div className='IndicacaoProjeto-close-button'>
+                            <button>X</button>
+                        </div>
                         <h1>Indicação CULT</h1>
                         <h3>As indicações dos nossos artistas ampliam as chances
                         de promover a arte e cultura no nosso País, além de 
@@ -21,7 +24,7 @@ const IndicacaoProjeto = () => {
                             <InputPopup id='telefone' placeholder='Telefone'/>
                             <InputPopup id='atuacao' placeholder='Atuação'/>
                         </div>
-                        <button>Indicar</button>
+                        <button className='IndicacaoProjeto-popup-itens-button-indicar'>Indicar</button>
                     </div>
                 </div>
             </section>
