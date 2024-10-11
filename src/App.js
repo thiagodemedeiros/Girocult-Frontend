@@ -10,11 +10,18 @@ import ClubeDeVantagens from './components/ClubeDeVantagens/ClubeDeVantagens.js'
 import Header from './components/Header/Header.js';
 import TelaAjuda from './components/TelaAjuda/TelaAjuda.js';
 import EditarPerfil from './components/EditarPerfil/EditarPerfil.js';
+import ChamamentoCadastrarNovosArtistas from './components/Popup/ChamamentoCadastrarNovosArtistas/ChamamentoCadastrarNovosArtistas.js';
+import IndicacaoProjeto from './components/Popup/IndicacaoProjeto/IndicacaoProjeto.js';
 import './App.css';
 
 function App() {
   return (
     <>
+      {/* Popups */}
+      <IndicacaoProjeto/>
+      {/* <ChamamentoCadastrarNovosArtistas/> */}
+
+      <div className='espacamento'></div>
       {/* Editar Perfil */}
       <Header/>
       <EditarPerfil/>

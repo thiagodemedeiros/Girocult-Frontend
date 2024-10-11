@@ -1,0 +1,20 @@
+.InputPopup input {
+    width: 326px;
+    height: 44px;
+    border-radius: 30px;
+    border: #ffffff solid 1px;
+    padding-left: 20px;
+    margin-top: 5px;
+    text-decoration-color: blue;
+    background-color: transparent;
+}
+
+.InputPopup input::placeholder {
+    color: #ffffff;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .InputPopup input {
+        width: 85vw;
+    }
+}

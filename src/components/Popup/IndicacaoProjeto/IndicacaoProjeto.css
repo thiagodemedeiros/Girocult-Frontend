@@ -1,0 +1,86 @@
+.IndicacaoProjeto-container {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.IndicacaoProjeto-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 642px;
+    height: 503px;
+
+    background-color: #000;
+
+    color: #fff;
+}
+
+.IndicacaoProjeto-popup-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 430px;
+}
+
+.IndicacaoProjeto-popup h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.IndicacaoProjeto-popup h3 {
+    font-size: 16px;
+    font-weight: 300;
+
+    width: 476px;
+    text-align: center;
+}
+
+.IndicacaoProjeto-popup button {
+    width: 122px;
+    height: 37px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    background-color: #fff;
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.IndicacaoProjeto-popup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+    .IndicacaoProjeto-popup {
+        width: 500px;
+        min-height: 503px;
+        height: auto;
+        padding: 20px 0px;
+        margin: 0px 5px;
+        
+    }
+
+    .IndicacaoProjeto-popup-itens {
+        min-height: 430px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .IndicacaoProjeto-popup h3 {
+        width: 80%;
+    }
+}
